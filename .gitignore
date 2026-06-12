@@ -360,3 +360,22 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+# Session documentation and PDF files (local reference only)
+*.pdf
+*-Lab-Session-*.pdf
+s2.md
+s3.md
+EXERCISE-*.md
+SESSION-*.md
+TESTING-INSTRUCTIONS.md
+START-HERE.md
+RUN-TESTS.ps1
+TEST-*.ps1
+*-Testing-Guide.md
+*-GUIDE.md
+*-SUMMARY.md
+*-TESTING.md
+*-VISUAL*.md
+*-QUICK-REF.md
+*-TEST-RESULTS.md
