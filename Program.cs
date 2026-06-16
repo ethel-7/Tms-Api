@@ -11,6 +11,8 @@ builder.Services.AddAuthorization();
 
 builder.Services.AddSingleton<IEnrollmentService, EnrollmentService>();
 builder.Services.AddSingleton<EnrollmentWorker>();
+builder.Services.AddSingleton<IStudentService, StudentService>();
+builder.Services.AddSingleton<ICourseService, CourseService>();
 
 builder.Host.UseDefaultServiceProvider(options =>
 {
