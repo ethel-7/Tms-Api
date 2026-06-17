@@ -1,3 +1,7 @@
+namespace TmsApi.Services;
+
+using TmsApi.Entities;
+
 public interface IStudentService
 {
     Task<Student> CreateAsync(string name, int age, decimal gpa);

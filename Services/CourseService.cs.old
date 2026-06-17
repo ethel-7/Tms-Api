@@ -1,3 +1,7 @@
+namespace TmsApi.Services;
+
+using TmsApi.Entities;
+
 public interface ICourseService
 {
     Task<Course> CreateAsync(string code, string title, int capacity);
