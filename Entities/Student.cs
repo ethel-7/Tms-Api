@@ -7,6 +7,12 @@ public class Student
     public required string Name { get; set; }
     public decimal GPA { get; set; }
     public bool IsActive { get; set; } = true;
+    
+    // Exercise 8: Concurrency token
+    public uint Version { get; set; }
+    
+    // Exercise 9: Soft delete support
+    public bool IsDeleted { get; set; } = false;
 
     // Navigation property for many-to-many relationship
     public ICollection<Enrollment> Enrollments { get; set; } = new List<Enrollment>();
