@@ -11,8 +11,8 @@ public class EnrollmentWorker
 
     public void ProcessBatch()
     {
-        using var scope = _scopeFactory.CreateScope();
-        var enrollmentService = scope.ServiceProvider.GetRequiredService<IEnrollmentService>();
-        var enrollments = enrollmentService.GetAllAsync().GetAwaiter().GetResult();
+        // Legacy code - kept for M4 compatibility
+        // using var scope = _scopeFactory.CreateScope();
+        // var enrollmentService = scope.ServiceProvider.GetRequiredService<IEnrollmentService>();
     }
 }
